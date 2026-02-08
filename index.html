@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="keys">
+            <button onclick="clearDisplay()" class="btn colorange">C</button>
+            <button onclick="appendValue('/')" class="operator">/</button>
+            <button onclick="appendValue('*')"class="operator">*</button>
+            <button onclick="deleteLast()"class="btn colred">DEL</button>
+            <button onclick="appendValue('7')"class="btn colpink">7</button>
+            <button onclick="appendValue('8')"class="btn colpink">8</button>
+            <button onclick="appendValue('9')"class="btn colpink">9</button>
+            <button onclick="appendValue('-')"class="operator">-</button>
+            <button onclick="appendValue('4')"class="btn colpink">4</button>
+            <button onclick="appendValue('5')"class="btn colpink">5</button>
+            <button onclick="appendValue('6')"class="btn colpink">6</button>
+            <button onclick="appendValue('+')"class="operator">+</button>
+            <button onclick="appendValue('1')"class="btn colpink">1</button>
+            <button onclick="appendValue('2')"class="btn colpink">2</button>
+            <button onclick="appendValue('3')"class="btn colpink">3</button>
+            <button onclick="appendValue('.')"class="btn colyellow">.</button>
+            <button onclick="appendValue('0')" class="zero">0</button>
+            <button onclick="calculate()" class="equal">=</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
